@@ -1,6 +1,6 @@
 connection: "ice_db"
 
-#include: "*.view.lkml"         # include all views in this project
+include: "*.view.lkml"         # include all views in this project
 #include: "*.dashboard.lookml"  # include all dashboards in this project
 
 # # Select the views that should be a part of this model,
@@ -17,3 +17,6 @@ connection: "ice_db"
 #     sql_on: ${users.id} = ${orders.user_id} ;;
 #   }
 # }
+explore: customers {
+
+}
