@@ -18,5 +18,11 @@ include: "*.view.lkml"         # include all views in this project
 #   }
 # }
 explore: customers {
+  join: segments {
+
+    relationship: many_to_one
+    sql_on: ${customers.segment} = ${segments.name} ;;
+
+  }
 
 }
